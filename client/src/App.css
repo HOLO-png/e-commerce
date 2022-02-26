@@ -1,0 +1,113 @@
+
+
+body{
+  padding: 0;
+  margin:0;
+}
+p {
+  display: block;
+  margin-block-start:0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.body{
+  margin : 0 auto;
+  width: 400px;
+  height: auto;
+  /* background-color: aqua; */
+}
+.cart{
+  width: 100%;
+  height: 60px;
+  background-color:white;
+}
+ .cart img#cart, p#count{
+   float: right;
+   padding: 0 5px;
+ }
+ p#count{
+   line-height: 50px;
+    color: gray;
+ }
+
+ .search{
+   width: 100%;
+   height: 60px;
+   background-color:white;
+ }
+
+.search input[type="text"]{
+  border: 2px solid rgba(128, 128, 128, 0.616);
+  border-radius: 3px;
+  padding: 0.2em;
+  width: 200px;
+  height: 20px;
+}
+
+.ProductTable{
+  width: 100%;
+  height: auto;
+}
+
+.ProductTable .ProductRow{
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.ProductTable .ProductRow .left{
+  float: left;
+  width: 30%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+} 
+
+.ProductTable .ProductRow .right{
+  float: right;
+  width: 68%;
+  height: 100%;
+  position: relative;
+}
+
+.ProductTable .ProductRow .right p#title{
+  font-weight: 500;
+  font-size: 0.9em;
+}
+.ProductTable .ProductRow .right .bottom{
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  bottom: 0;
+  /* background-color: green; */
+}
+.bottom p{
+  padding: 0;
+  font-size: 0.85em;
+
+}
+.bottom p#price{
+  float: left;
+  color: red;
+}
+.bottom #stocking{
+  float: right;
+  color: white;
+  background-color: rgb(40,110,140);
+  padding: 0.2em 0.9em;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.85em;
+  border: none;
+}
+.bottom #stocking:hover{
+  background-color: rgb(83, 40, 140);
+  transition: 0.25s all;
+}
+.bottom #out-of-stock{
+  color: orange;
+  clear: both;
+}
